@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="../logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rastreo - ULTRARL COURIER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .construction-container {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #eef2f3 100%);
+        }
+
+        .construction-icon {
+            font-size: 5rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            animation: bounce 2s infinite;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .construction-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .construction-text {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+            color: var(--text-dark);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="../logo.png" alt="ULTRARL COURIER Logo" class="logo-img">
+                <span class="logo-text">ULTRARL COURIER</span>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html#home">Inicio</a>
+                <a href="../index.html#services">Servicios</a>
+                <a href="../index.html#locations">Sucursales</a>
+                <a href="#" style="color: var(--secondary-color);">Rastreo</a>
+                <a href="../index.html#contact">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="construction-container">
+        <i class="fas fa-hard-hat construction-icon"></i>
+        <h1 class="construction-title">Sección en Construcción</h1>
+        <p class="construction-text">
+            Estamos trabajando arduamente para traerte la mejor experiencia de rastreo.
+            Pronto podrás seguir tus envíos en tiempo real con la tecnología de ULTRARL COURIER.
+        </p>
+        <a href="../index.html" class="cta-button">Volver al Inicio</a>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>ULTRARL COURIER</h4>
+                <p>Tu socio logístico de confianza en Bolivia.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html#home">Inicio</a></li>
+                    <li><a href="../index.html#services">Servicios</a></li>
+                    <li><a href="../index.html#locations">Sucursales</a></li>
+                    <li><a href="#">Rastreo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ULTRARL COURIER. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

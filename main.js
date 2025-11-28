@@ -1,52 +1,210 @@
 import './style.css'
 
 const companyData = {
-    name: "ULTRA RL",
-    nit: "6183560010",
-    email: "ultrarl.bolivia@gmail.com",
-    phone: "2 455741",
-    cell: "73242746",
-    address: "Plaza Alonzo de Mendoza Nº180 edif. El fundador piso 1 of. 8D, La Paz"
+  name: "ULTRARL COURIER",
+  nit: "6183560010",
+  email: "ultrarl.bolivia@gmail.com",
+  phone: "2 455741",
+  cell: "73242746",
+  address: "Plaza Alonzo de Mendoza Nº180 edif. El fundador piso 1 of. 8D, La Paz"
 };
 
 const locations = [
-    {
-        city: "TARIJA",
-        manager: "Isidora Alfaro",
-        cell: "+591 71191525",
-        address: "CALLE GRAL. BERNARDO TRIGO - FRENTE AL MUSEO NACIONAL PALEONTOLOGICO",
-        coords: "-21.534776, -64.735040",
-        note: "plazuela San Agustín galería plaza"
-    },
-    {
-        city: "POTOSI",
-        manager: "Alexander Castro Machuca",
-        cell: "+591 78636188",
-        address: "Calle Quijarro #7 entre Bolívar e Ingavi",
-        coords: "-19.587369, -65.754012",
-        note: ""
-    },
-    {
-        city: "SUCRE",
-        manager: "Richard Sandoval",
-        cell: "+591 73466826",
-        address: "Av. Italia #54",
-        coords: "-19.077032, -65.241281",
-        note: ""
-    }
+  {
+    city: "LA PAZ",
+    manager: "SR RAMIRO LARICO",
+    cell: "73242746",
+    phone: "2455741",
+    address: "PLAZA ALONZO DE MENDOZA EDIFICIO CENTRO COMERCIAL FUNDADOR PISO 1 OFICINA 8",
+    note: ""
+  },
+  /* {
+    city: "SANTA CRUZ",
+    manager: "SRA ROSA ZARATE",
+    cell: "67791611",
+    address: "CALLE WARNES 1001",
+    note: "NO DISPONIBLE POR EL MOMENTO",
+    unavailable: true
+  }, */
+  {
+    city: "COCHABAMBA",
+    manager: "SR LUIS JAVIER ARIAS",
+    cell: "71549870",
+    address: "CALLE ECUADOR 251 ENTRE JUNIN Y HAMIRAYA FRENTE AL COLEGIO 8 DE MAYO O BARRIENTOS",
+    note: ""
+  },
+  {
+    city: "TRINIDAD",
+    manager: "SR. CARLOS GANDARILLAS O.",
+    cell: "71144403 - 75198161",
+    address: "CALLE ROMULO MENDOZA Nº 135",
+    note: ""
+  },
+  {
+    city: "SUCRE",
+    manager: "RICHARD SANDOVAL",
+    cell: "73466826",
+    address: "AV. ITALIA N.º 54",
+    coords: "-19.077032, -65.241281",
+    note: ""
+  },
+  {
+    city: "POTOSI",
+    manager: "SRA. ALEXANDER CASTRO",
+    cell: "73890436 - 78636188",
+    address: "CALLE HOYOS Nº 216",
+    coords: "-19.587369, -65.754012",
+    note: ""
+  },
+  {
+    city: "ORURO",
+    manager: "SR. PABLO AYLLON",
+    cell: "71840884",
+    address: "CALLE PETOT No 2524 Y ADOLFO MIER",
+    note: ""
+  },
+  {
+    city: "TARIJA",
+    manager: "SRA. ISIDORA ALFARO",
+    cell: "71191525 - 75121095",
+    address: "CALLE VIRGINIA LEMA Nº 443, ENTRE CAMPERO Y GRAL. TRIGO",
+    coords: "-21.534776, -64.735040",
+    note: "plazuela San Agustín galería plaza"
+  },
+  {
+    city: "COBIJA",
+    manager: "SRA. VIVIAN TORRICO",
+    cell: "70034443",
+    address: "BARRIO CONAVI CALLE ELVIRA GUTIERREZ Nº 58 FRENTE A DEFENSORIA NNA",
+    note: ""
+  },
+  {
+    city: "RIBERALTA",
+    manager: "SR. LUIS FERNANDO SUAREZ",
+    cell: "75196921",
+    phone: "8524786",
+    address: "AV. SUCRE Nº 885",
+    note: ""
+  },
+  {
+    city: "GUAYARAMERIN",
+    manager: "SR. ALEXANDER ALVAREZ NOVOA",
+    cell: "67359943",
+    address: "TARIJA ESQ. NICOLAS SUAREZ, AL LADO DE LA EMBOTELLADORA DE NUDELPA LTDA.",
+    note: ""
+  },
+  {
+    city: "BERMEJO",
+    manager: "SR. ALEJANDRO ALFARO",
+    cell: "61876724",
+    address: "AV. LUIS DE FUENTE Nº 525 ENTRE CALLE TARIJA Y COCHABAMBA",
+    note: ""
+  },
+  {
+    city: "YACUIBA",
+    manager: "SR. RIMBER CARREÑO",
+    cell: "76834647",
+    address: "CALLE SAN PEDRO CASI ESQ. COMERCIO, FRENTE A UNIDAD EDUCATIVA",
+    note: ""
+  },
+  {
+    city: "ENTRE RIOS",
+    manager: "SRA. ADA GRIMALDO",
+    cell: "72980672",
+    address: "ENTRE RIOS S/N",
+    note: ""
+  },
+  {
+    city: "VILLAMONTES",
+    manager: "SRA. KATIA APARICIO VILLA",
+    cell: "78193920",
+    address: "AV. INGAVI ESQ. CAPITAN MANCHEGO, LADO VETERINARIO",
+    note: ""
+  },
+  {
+    city: "CARAPARI",
+    manager: "SR. ANSELMO ALFARO",
+    cell: "71893920",
+    address: "CALLE CAMPERO E INDEPENDENCIA, FRENTE A LA PLAZA PRINCIPAL",
+    note: ""
+  },
+  {
+    city: "UYUNI",
+    manager: "SR. LUIS CALISAYA",
+    cell: "74242402",
+    address: "CALLE COLON Nº 412",
+    note: ""
+  },
+  {
+    city: "CARANAVI",
+    manager: "SRA. LIDIA PACO DE QUENTA",
+    cell: "71233814 - 65153678",
+    address: "CARANAVI CALLE BOLIVAR Y CALAMA, OFICINAS DE RADIO ORIGEN",
+    note: ""
+  },
+  {
+    city: "TUPIZA",
+    manager: "SRA. ROSMERY ISNADO",
+    cell: "73850755",
+    address: "TERMINAL DE BUSES, AREA GUARDA EQUIPAJES",
+    note: ""
+  },
+  {
+    city: "CAMARGO",
+    manager: "SRA. MARIA URZAGASTE",
+    cell: "74459910",
+    address: "CAMARGO S/N",
+    note: ""
+  },
+  {
+    city: "MONTEAGUDO - SUCRE",
+    manager: "SR. ROBERTO MONTERO",
+    cell: "73471991",
+    address: "SUCRE BARRIO LOS PINOS CALLE SAUL ABDELNUR No 14",
+    note: ""
+  },
+  {
+    city: "VILLAZON",
+    manager: "SRA. ROSARIO SOLIZ",
+    cell: "79455794",
+    address: "EX TERMINAL AV 20 DE MAYO S/N",
+    note: ""
+  },
+  {
+    city: "PUERTO SUAREZ",
+    manager: "SR. PEDRO LIJERON",
+    cell: "72187600 - 75755841",
+    address: "AV. SIMON BOLIVAR Nº 8",
+    note: ""
+  },
+  {
+    city: "LLALLAGUA",
+    manager: "SRA. TEODOCIA DAZA",
+    cell: "74409623",
+    address: "URB. SALVADORA S/N",
+    note: ""
+  },
+  {
+    city: "COROICO",
+    manager: "SRA. GUADALUPE MAMANI CHURA",
+    cell: "72050883",
+    address: "AV. PRINCIPAL AV. SAGARNAGA FRENTE AL JUZGADO",
+    note: ""
+  }
 ];
 
 document.querySelector('#app').innerHTML = `
   <header>
     <nav>
       <div class="logo-container">
-        <img src="./logo.png" alt="Ultra RL Logo" class="logo-img">
-        <span class="logo-text">ULTRA RL</span>
+        <img src="./logo.png" alt="ULTRARL COURIER Logo" class="logo-img">
+        <span class="logo-text">ULTRARL COURIER</span>
       </div>
       <div class="nav-links">
         <a href="#home">Inicio</a>
         <a href="#services">Servicios</a>
         <a href="#locations">Sucursales</a>
+        <a href="./rastreo/">Rastreo</a>
         <a href="#contact">Contacto</a>
       </div>
     </nav>
@@ -91,7 +249,7 @@ document.querySelector('#app').innerHTML = `
   <footer id="contact">
     <div class="footer-content">
       <div class="footer-col">
-        <h4>Ultra RL</h4>
+        <h4>ULTRARL COURIER</h4>
         <p>Tu socio logístico de confianza en Bolivia.</p>
       </div>
       <div class="footer-col">
@@ -109,51 +267,76 @@ document.querySelector('#app').innerHTML = `
           <li><a href="#home">Inicio</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#locations">Sucursales</a></li>
+          <li><a href="./rastreo/">Rastreo</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 Ultra RL. Todos los derechos reservados.</p>
+      <p>&copy; 2025 ULTRARL COURIER. Todos los derechos reservados.</p>
     </div>
   </footer>
 `
 
+// Update links to Rastreo
+document.querySelectorAll('a[href="./rastreo.html"]').forEach(link => {
+  link.setAttribute('href', './rastreo/');
+});
+
 const locationsContainer = document.getElementById('locations-container');
 
+// Sort locations: those with coords first, then others
+locations.sort((a, b) => {
+  if (a.coords && !b.coords) return -1;
+  if (!a.coords && b.coords) return 1;
+  return 0;
+});
+
 locations.forEach(loc => {
-    const card = document.createElement('div');
-    card.className = 'location-card';
+  const card = document.createElement('div');
+  // Add 'no-map' class if no coords
+  const mapClass = loc.coords ? '' : 'no-map';
+  card.className = `location-card ${loc.unavailable ? 'unavailable' : ''} ${mapClass}`;
 
-    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${loc.coords}`;
+  if (loc.unavailable) {
+    card.style.opacity = '0.7';
+    card.style.backgroundColor = '#f8f9fa';
+  }
 
-    card.innerHTML = `
-    <div class="location-header">
+  // Only create map link if coords exist
+  const mapLink = loc.coords
+    ? `<a href="https://www.google.com/maps/search/?api=1&query=${loc.coords}" target="_blank" class="map-link">Ver en Google Maps &rarr;</a>`
+    : '';
+
+  card.innerHTML = `
+    <div class="location-header" style="${loc.unavailable ? 'background-color: #6c757d;' : ''}">
       <h3>${loc.city}</h3>
-      <i class="fas fa-map-marker-alt"></i>
+      ${loc.coords ? '<i class="fas fa-map-marker-alt"></i>' : '<i class="fas fa-building"></i>'}
     </div>
     <div class="location-body">
+      ${loc.unavailable ? '<div class="location-info" style="color: #dc3545; font-weight: bold;">NO DISPONIBLE</div>' : ''}
       <div class="location-info">
         <strong>Encargado:</strong> <span>${loc.manager}</span>
       </div>
       <div class="location-info">
         <strong>Celular:</strong> <span>${loc.cell}</span>
       </div>
+      ${loc.phone ? `<div class="location-info"><strong>Teléfono:</strong> <span>${loc.phone}</span></div>` : ''}
       <div class="location-info">
         <strong>Dirección:</strong> <span>${loc.address}</span>
       </div>
       ${loc.note ? `<div class="location-info"><em>${loc.note}</em></div>` : ''}
-      <a href="${googleMapsUrl}" target="_blank" class="map-link">Ver en Google Maps &rarr;</a>
+      ${mapLink}
     </div>
   `;
-    locationsContainer.appendChild(card);
+  locationsContainer.appendChild(card);
 });
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
+  });
 });
